@@ -21,7 +21,7 @@ export default function Login() {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-[#5856A1]">
+        <main className="min-h-screen flex items-center justify-center bg-[#5856A1]">
             <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md max-sm:mx-2">
                 <h1 className="text-2xl font-bold text-center text-[#5856A1] mb-6">
                     Attendance Management System
@@ -99,6 +99,6 @@ export default function Login() {
                     </Link>
                 </p>
             </div>
-        </div>
+        </main>
     );
 }

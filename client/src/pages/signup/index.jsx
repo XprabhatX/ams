@@ -19,7 +19,7 @@ export default function SignUp() {
     };
 
     return (
-        <div className="min-h-screen flex flex-col md:flex-row bg-white">
+        <main className="min-h-screen flex flex-col md:flex-row bg-white">
             <div className="md:w-1/2 bg-[#5856A1] flex items-center justify-center p-8">
                 <div className="text-white max-w-md">
                     <h1 className="text-4xl font-bold mb-4">Welcome to AMS</h1>
@@ -131,6 +131,6 @@ export default function SignUp() {
                     </p>
                 </div>
             </div>
-        </div>
+        </main>
     );
 };
