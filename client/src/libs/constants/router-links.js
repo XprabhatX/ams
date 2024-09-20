@@ -1,3 +1,3 @@
-export const LOGIN = "/login";
-export const SIGNUP = "/signup";
-export const FORGET_PASSWORD = "/reset-password";
+export const LOGIN_URL = "/login";
+export const SIGNUP_URL = "/signup";
+export const FORGET_PASSWORD_URL = "/reset-password";

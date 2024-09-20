@@ -6,7 +6,7 @@ import {
     FaUserGraduate,
     FaChalkboardTeacher,
 } from "react-icons/fa";
-import { FORGET_PASSWORD } from '../../libs/constants/router-links'
+import { FORGET_PASSWORD_URL } from '../../libs/constants/router-links'
 
 export default function Login() {
     const [userType, setUserType] = useState("student");
@@ -94,7 +94,7 @@ export default function Login() {
                 <p className="mt-4 text-center text-sm text-gray-600">
                     Forgot your password?{" "}
 
-                    <Link to={FORGET_PASSWORD} className="text-[#5856A1] hover:underline">
+                    <Link to={FORGET_PASSWORD_URL} className="text-[#5856A1] hover:underline">
                         Reset here
                     </Link>
                 </p>
