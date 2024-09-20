@@ -19,7 +19,7 @@ export default function Navbar() {
 
     return (
         <nav className="fixed bottom-0 left-0 z-50 w-full border-t border-black px-4 py-2 shadow-lg sm:px-6">
-            <div className="flex items-center justify-around">
+            <div className="flex items-center justify-around [&>*]:cursor-pointer">
                 <NavLink
                     to={
                         user?.userType === ACCOUNT_TYPE.STUDENT
@@ -32,7 +32,7 @@ export default function Navbar() {
                             : "flex flex-col items-center gap-1 transition-colors"
                     }
                 >
-                    <FaWifi className="size-7" />
+                    <FaWifi className="size-7 rotate-90" />
                     {/* <span className="text-xs font-medium">Home</span> */}
                 </NavLink>
                 <NavLink
