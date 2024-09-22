@@ -4,6 +4,7 @@ const initialState = {
     user: {
         name: "Dr. Vaishali Patil",
         username: "vaishali",
+        email: "vaishali.patil@tcetmumbai.in",
         userType: "teacher",
         imageUrl: "https://xsgames.co/randomusers/avatar.php?g=male",
     },

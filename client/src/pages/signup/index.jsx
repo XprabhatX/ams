@@ -7,6 +7,7 @@ import {
     FaChalkboardTeacher,
 } from "react-icons/fa";
 import { LOGIN_URL } from "../../libs/constants/router-links";
+import { ACCOUNT_TYPE } from '../../libs/constants'
 
 export default function SignUp() {
     const [username, setUsername] = useState("");
@@ -91,7 +92,7 @@ export default function SignUp() {
                                     type="button"
                                     onClick={() => setUserType("student")}
                                     className={`flex-1 py-2 px-4 rounded-md flex items-center justify-center ${
-                                        userType === "student"
+                                        userType === ACCOUNT_TYPE.STUDENT
                                             ? "bg-[#5856A1] text-white"
                                             : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                                     } transition-colors duration-300`}
@@ -103,7 +104,7 @@ export default function SignUp() {
                                     type="button"
                                     onClick={() => setUserType("teacher")}
                                     className={`flex-1 py-2 px-4 rounded-md flex items-center justify-center ${
-                                        userType === "teacher"
+                                        userType === ACCOUNT_TYPE.TEACHER
                                             ? "bg-[#5856A1] text-white"
                                             : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                                     } transition-colors duration-300`}

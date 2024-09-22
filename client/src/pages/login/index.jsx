@@ -7,6 +7,7 @@ import {
     FaChalkboardTeacher,
 } from "react-icons/fa";
 import { FORGET_PASSWORD_URL } from '../../libs/constants/router-links'
+import { ACCOUNT_TYPE } from '../../libs/constants'
 
 export default function Login() {
     const [userType, setUserType] = useState("student");
@@ -37,7 +38,7 @@ export default function Login() {
                     <div className="relative flex">
                         <button
                             className={`flex items-center justify-center w-1/2 py-2 rounded-md transition-colors duration-300 ${
-                                userType === "student"
+                                userType === ACCOUNT_TYPE.STUDENT
                                     ? "text-white"
                                     : "text-[#5856A1]"
                             }`}
@@ -48,7 +49,7 @@ export default function Login() {
                         </button>
                         <button
                             className={`flex items-center justify-center w-1/2 py-2 rounded-md transition-colors duration-300 ${
-                                userType === "teacher"
+                                userType === ACCOUNT_TYPE.TEACHER
                                     ? "text-white"
                                     : "text-[#5856A1]"
                             }`}
